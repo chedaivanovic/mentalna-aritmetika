@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sirijus - Abakus i Matematika</title>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&amp;subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="img/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  </head>
+  <body>
+    <header class="w-100 text-white text-center">
+      <nav id="topnav" class="topnav bg-light text-secondary">
+        <div class="wrapper position-relative">
+          <a
+            href=""
+            id="mainlogo"
+            class="mainlogo navbar-brand position-absolute"
+            ><img src="img/logo.png" alt=""
+          /></a>
+          <h1 class="topnavtext my-sm-3 h6 float-left pl-5 ml-5">
+            Suan Pan - Mentalna Aritmetika<span class="d-none d-sm-inline">
+              | Beograd</span
+            >
+          </h1>
+          <div
+            class="float-right d-none d-md-flex justify-content-between align-items-center"
+          >
+            <a href="" class="btn btn-lg btn-danger m-2">PRIJAVA</a>
+          </div>
+        </div>
+      </nav>
+      <nav
+        id="mainnav"
+        class="navbar-dark navbar-expand-lg navbar-danger bg-danger text-white mainnav"
+      >
+        <div
+          class="wrapper text-right font-weight-bold position-relative inmainnav"
+        >
+          <button
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            id="maincolbutt"
+          >
+            <i class="fas fa-bars text-white"></i>
+          </button>
+          <a href="index.html" id="seclogo" class="position-absolute d-none"
+            ><img src="img/logo.png" alt=""
+          /></a>
+          <div
+            class="collapse navbar-collapse text-center font-weight-light"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav list-unstyled p-0 ml-auto">
+              <li class="d-inline nav-item position-relative droppar">
+                <a
+                  href="najcpit.html"
+                  class="mnlink nav-link d-block text-white"
+                  >Mentalna Aritmetika
+                  <i class="fas fa-caret-down d-none d-lg-inline"></i>
+                </a>
+                <button
+                  class="appeardrop navbar-toggler d-block d-lg-none position-absolute py-0 border-0"
+                  data-toggle="collapse"
+                  data-target="#secmenu"
+                >
+                  <i class="fas fa-caret-down fa-2x text-white"></i>
+                </button>
+                <ul
+                  id="secmenu"
+                  class="bg-danger list-unstyled px-2 border-top border-light collapse"
+                >
+                  <li>
+                    <a class="mnlink nav-link text-white" href="whatmenta.html"
+                      >Šta je mentalna aritmetika SuanPan?</a
+                    >
+                  </li>
+                  <li>
+                    <a class="mnlink nav-link text-white" href="progmenta.html"
+                      >Program mentalne aritmetike SuanPan</a
+                    >
+                  </li>
+                  <li>
+                    <a class="mnlink nav-link text-white" href="abakusimat.html"
+                      >Abakus i matematičke operacije</a
+                    >
+                  </li>
+                  <li>
+                    <a class="mnlink nav-link text-white" href="kursmenta.html"
+                      >Kursevi mentalne aritmetike SuanPan</a
+                    >
+                  </li>
+                  <li>
+                    <a class="mnlink nav-link text-white" href="ciljmenta.html"
+                      >Ciljevi mentalne aritmetike SuanPan</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="d-inline nav-item">
+                <a href="index.html" class="mnlink nav-link d-block text-white"
+                  >Produženi Boravak</a
+                >
+              </li>
+              <li class="d-inline nav-item">
+                <a
+                  href="cenovnik.html"
+                  class="mnlink nav-link d-block text-white"
+                  >Cenovnik</a
+                >
+              </li>
+              <li class="d-inline nav-item">
+                <a href="onama.html" class="mnlink nav-link d-block text-white"
+                  >O nama</a
+                >
+              </li>
+              <li class="d-inline nav-item">
+                <a href="video.html" class="mnlink nav-link d-block text-white"
+                  >Video</a
+                >
+              </li>
+              <li class="d-inline nav-item">
+                <a href="index.html" class="mnlink nav-link d-block text-white"
+                  >Galerija</a
+                >
+              </li>
+              <li class="d-inline nav-item">
+                <a
+                  href="kontakt.html"
+                  class="mnlink nav-link d-block text-white"
+                  >Kontakt</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="razmak"></div>
+
+    <!-- Abakus i Matematičke operacije -->
+    <section id="abamat" class="text-white text-center">
+      <div class="dotoverlay py-5">
+        <div class="wrapper">
+          <h3 class="pt-4">Abakus i Matematičke operacije</h3>
+          <p>
+            Učenik SuanPan-a će moći da mentalno izračuna operacije slične
+            navedenim, u vremenskom periodu od 3-5 sekundi:<br /><br /><span
+              class="text-left"
+            >
+              >148 + 43 + 69 - 34 + 126 – 79 + 57 – 132 = ?<br /><br />468 / 36
+              = ?<br /><br />790 x 18 = ?<br /><br />6936 – 1326 = ?</span
+            ><br /><br />Program počinje istovremenom primenom abakusa
+            (računaljke) i auditivnog treninga, sledi mentalno usvajanje i
+            postavljanje abakusa u mislima, što dovodi do misaonog izvođenja
+            računskih operacija bez mogućnosti greške i to za vrlo kratko vreme.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ment.Arit. section -->
+
+    <section id="mentar">
+      <div class="wrapper">
+        <h2 class="text-center h1">
+          <span class="d-none d-lg-inline">Mentalna aritmetika Suan Pan</span>
+          <br />
+          Dečji obrazovni centar Sirijus
+        </h2>
+
+        <div
+          class="hpmentcards pt-4 d-flex justify-content-around flex-wrap text-dark"
+        >
+          <div class="hpmentaritem hpmi1 text-center my-2">
+            <img src="img/reading.svg" alt="" />
+            <h3>HUAN PAN MENTALNA ARITMETIKA</h3>
+            <p class="px-2">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Perspiciatis, dicta nostrum itaque ut laborum ratione esse enim
+              temporibus! Laboriosam eaque, obcaecati nemo pariatur vel
+              voluptatum et sed praesentium similique nesciunt.
+            </p>
+          </div>
+          <div class="hpmentaritem hpmi2 text-center my-2">
+            <img src="img/blackboard.svg" alt="" />
+            <h3>DEČJI CENTAR SIRIJUS</h3>
+            <p class="px-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              cumque itaque laudantium autem minus alias labore voluptas
+              consequatur odit reiciendis. Ab ullam quisquam et quas. Non earum
+              omnis quia fuga!
+            </p>
+          </div>
+          <div class="hpmentaritem hpmi3 text-center my-2">
+            <img src="img/busy.svg" alt="" />
+            <h3>PRODUŽENI BORAVAK</h3>
+            <p class="px-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+              temporibus vero labore hic rerum praesentium, cupiditate aperiam
+              quis recusandae fugiat! Earum expedita sed totam dolorem sit enim
+              qui quis ab.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Us Section -->
+
+    <section id="whyus" class="overflow-hidden">
+      <div class="d-flex justify-content-around flex-wrap">
+        <h2 class="text-white display-4 text-center">
+          Zašto da odaberete nas?
+        </h2>
+        <div class="whyusitem text-center p-3">
+          <img src="img/license.svg" alt="" />
+          <h4>Licenciran Program</h4>
+          <p class="d-none d-sm-block">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+            magnam? Delectus, facilis? Similique dolor asperiores assumenda ex,
+            sint fugit repudiandae. Reprehenderit laudantium nihil culpa vitae?
+          </p>
+        </div>
+        <div class="whyusitem text-center p-3">
+          <img src="img/calculator.svg" alt="" />
+          <h4>Zabava i učenje</h4>
+          <p class="d-none d-sm-block">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+            magnam? Delectus, facilis? Similique dolor asperiores assumenda ex,
+            sint fugit repudiandae. Reprehenderit laudantium nihil culpa vitae?
+          </p>
+        </div>
+        <div class="whyusitem text-center p-3">
+          <img src="img/whiteboard.svg" alt="" />
+          <h4>Poboljšanje pažnje dece</h4>
+          <p class="d-none d-sm-block">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+            magnam? Delectus, facilis? Similique dolor asperiores assumenda ex,
+            sint fugit repudiandae. Reprehenderit laudantium nihil culpa vitae?
+          </p>
+        </div>
+        <div class="whyusitem text-center p-3">
+          <img src="img/brain2.svg" alt="" />
+          <h4>Poboljšanje moždanih funkcija</h4>
+          <p class="d-none d-sm-block">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+            magnam? Delectus, facilis? Similique dolor asperiores assumenda ex,
+            sint fugit repudiandae. Reprehenderit laudantium nihil culpa vitae?
+          </p>
+        </div>
+        <div class="whyusitem text-center p-3">
+          <img src="img/college.svg" alt="" />
+          <h4>Odličan prostor</h4>
+          <p class="d-none d-sm-block">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+            magnam? Delectus, facilis? Similique dolor asperiores assumenda ex,
+            sint fugit repudiandae. Reprehenderit laudantium nihil culpa vitae?
+          </p>
+        </div>
+        <div class="whyusitem text-center p-3">
+          <img src="img/literature.svg" alt="" />
+          <h4>Kvalitetna i zdrava hrana</h4>
+          <p class="d-none d-sm-block">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+            magnam? Delectus, facilis? Similique dolor asperiores assumenda ex,
+            sint fugit repudiandae. Reprehenderit laudantium nihil culpa vitae?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Jumbotrons -->
+    <section class="jmb1">
+      <div class="jumbotron fluid-jumbotron dotoverlay  text-white">
+        <div class="wrapper">
+          <h4 class="display-6">Mentalna aritmetika Suanpan</h4>
+          <h3 class="display-4">Upis za septembarski rok u toku!</h3>
+          <p>
+            20% popusta za upis do kraja jula 2016. Nastava u septembarskom
+            upisnom roku počinje 17. septembra. Časovi se održavaju subotom i
+            nedeljom u terminima od 9.30, 12.30 i 15.30h.
+          </p>
+          <h5 class="display-5">
+            Rezervišite na vreme mesto u željenom terminu.
+          </h5>
+          <p>
+            Martovski upisni rok počinje 4. marta. 20% popusta za upis do kraja
+            januara 2017.
+          </p>
+          <a href="" class="btn d-none d-sm-inline-block btn-lg btn-danger"
+            >PRIJAVA</a
+          >
+          <a href="" class="btn btn-block d-sm-none btn-lg btn-danger"
+            >PRIJAVA</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="jmb2">
+      <div
+        class="jumbotron fluid-jumbotron dotoverlay  text-white text-right mb-0 mb-sm-3"
+      >
+        <div class="wrapper">
+          <h4 class="display-6">PRODUŽENI BORAVAK SIRIJUS</h4>
+          <h3 class="display-4">UPIS U TOKU!</h3>
+          <p>
+            20% popusta za upis do 31.07. za školsku 2016/2017.god.LETNJI
+            PROGRAM SIRIJUS Od 15. juna do 31.avgusta Mogućnost mesečnog i
+            dnevnog boravka
+          </p>
+          <h5 class="display-5">
+            UPIŠITE DECU NA VREME
+          </h5>
+          <a href="" class="btn btn-lg d-none d-sm-inline-block btn-danger mt-3"
+            >PRIJAVA</a
+          >
+          <a href="" class="btn btn-lg btn-block d-sm-none btn-danger mt-3"
+            >PRIJAVA</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- News Section-->
+
+    <div id="News" class="wrapper mb-sm-5">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <h4 class="text-danger novhead text-right text-sm-center">
+            <span class="d-none d-md-inline"
+              >Mentalna aritmetika Suan pan | </span
+            >Novosti
+            <button
+              class="navbar-toggler d-sm-none"
+              data-toggle="collapse"
+              data-target="#newscards"
+              id="newscollbutt"
+            >
+              <i class="fas fa-bars text-danger fa-lg"></i>
+            </button>
+          </h4>
+
+          <div id="newscards" class="collapse d-sm-block">
+            <div class="card">
+              <div class="crdhdr card-header bg-danger text-right p-0">
+                <a
+                  href="#collapse1"
+                  data-parent="#accordion"
+                  data-toggle="collapse"
+                  class="ifcoll text-white d-block py-3 mb-0 pr-4 h5"
+                >
+                  Prva novost <i class="plustomin fa fa-minus"></i>
+                </a>
+              </div>
+
+              <div id="collapse1" class="collapse show">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum
+                  architecto aut, recusandae totam ullam aperiam. Nesciunt
+                  expedita officiis animi quam corporis optio inventore facilis
+                  sint et nulla in, repellat debitis dolor at nisi quo, unde
+                  temporibus. Quos nisi nostrum officia, illo.
+                  <hr />
+                  <p class="text-muted w-100 text-right">19.12.2018 @ 13:45</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="crdhdr card-header bg-danger text-right p-0">
+                <a
+                  href="#collapse2"
+                  data-parent="#accordion"
+                  data-toggle="collapse"
+                  class="ifcoll text-white d-block py-3 mb-0 pr-4 h5"
+                >
+                  Druga novost <i class="plustomin fa fa-plus"></i>
+                </a>
+              </div>
+
+              <div id="collapse2" class="collapse">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum
+                  architecto aut, recusandae totam ullam aperiam. Nesciunt
+                  expedita officiis animi quam corporis optio inventore facilis
+                  sint et nulla in, repellat debitis dolor at nisi quo, unde
+                  temporibus. Quos nisi nostrum officia, illo.
+                  <hr />
+                  <p class="text-muted w-100 text-right">19.12.2018 @ 13:45</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="crdhdr card-header bg-danger text-right p-0">
+                <a
+                  href="#collapse3"
+                  data-parent="#accordion"
+                  data-toggle="collapse"
+                  class="ifcoll text-white d-block py-3 mb-0 pr-4 h5"
+                >
+                  Treća novost <i class="plustomin fa fa-plus"></i>
+                </a>
+              </div>
+
+              <div class="collapse" id="collapse3">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum
+                  architecto aut, recusandae totam ullam aperiam. Nesciunt
+                  expedita officiis animi quam corporis optio inventore facilis
+                  sint et nulla in, repellat debitis dolor at nisi quo, unde
+                  temporibus. Quos nisi nostrum officia, illo.
+                  <hr />
+                  <p class="text-muted w-100 text-right">19.12.2018 @ 13:45</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="crdhdr card-header bg-danger text-right p-0">
+                <a
+                  href="#collapse4"
+                  data-parent="#accordion"
+                  data-toggle="collapse"
+                  class="ifcoll text-white d-block py-3 mb-0 pr-4 h5"
+                >
+                  Četvrta novost <i class="plustomin fa fa-plus"></i>
+                </a>
+              </div>
+
+              <div id="collapse4" class="collapse">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum
+                  architecto aut, recusandae totam ullam aperiam. Nesciunt
+                  expedita officiis animi quam corporis optio inventore facilis
+                  sint et nulla in, repellat debitis dolor at nisi quo, unde
+                  temporibus. Quos nisi nostrum officia, illo.
+                  <hr />
+                  <p class="text-muted w-100 text-right">19.12.2018 @ 13:45</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="crdhdr card-header bg-danger text-right p-0">
+                <a
+                  href="#collapse5"
+                  data-parent="#accordion"
+                  data-toggle="collapse"
+                  class="ifcoll text-white d-block py-3 mb-0 pr-4 h5"
+                >
+                  Peta novost <i class="plustomin fa fa-plus"></i>
+                </a>
+              </div>
+
+              <div id="collapse5" class="collapse">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum
+                  architecto aut, recusandae totam ullam aperiam. Nesciunt
+                  expedita officiis animi quam corporis optio inventore facilis
+                  sint et nulla in, repellat debitis dolor at nisi quo, unde
+                  temporibus. Quos nisi nostrum officia, illo.
+                  <hr />
+                  <p class="text-muted w-100 text-right">19.12.2018 @ 13:45</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-5">
+              <div class="crdhdr card-header bg-danger text-right p-0">
+                <a
+                  href="#collapse6"
+                  data-parent="#accordion"
+                  data-toggle="collapse"
+                  class="ifcoll text-white d-block py-3 mb-0 pr-4 h5"
+                >
+                  Šesta novost <i class="plustomin fa fa-plus"></i>
+                </a>
+              </div>
+
+              <div class="collapse" id="collapse6">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum
+                  architecto aut, recusandae totam ullam aperiam. Nesciunt
+                  expedita officiis animi quam corporis optio inventore facilis
+                  sint et nulla in, repellat debitis dolor at nisi quo, unde
+                  temporibus. Quos nisi nostrum officia, illo.
+                  <hr />
+                  <p class="text-muted w-100 text-right">19.12.2018 @ 13:45</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="d-sm-none bg-danger w-100 disshr"></span>
+        <!-- Comments section -->
+        <div id="comments" class="col-12 col-lg-6 mb-sm-5">
+          <h4 class="text-danger novhead text-right text-sm-center">
+            <span class="d-none d-md-inline"
+              >Mentalna aritmetika Suan pan |
+            </span>
+            Komentari
+            <button
+              class="navbar-toggler d-sm-none"
+              data-toggle="collapse"
+              data-target="#commcards"
+              id="commcollbutt"
+            >
+              <i class="fas fa-bars text-danger fa-lg"></i>
+            </button>
+          </h4>
+          <div id="commcards" class="collapse d-sm-block">
+            <div class="card">
+              <div class="card-header bg-danger text-white">
+                <h4>Komentari korisnika</h4>
+              </div>
+              <div class="card-body">
+                <ul class="media-list p-0">
+                  <li class="media">
+                    <a href="#" class="float-left mr-4">
+                      <img src="img/randomperson1.jpg" alt="" class="rounded" />
+                    </a>
+                    <div class="media-body">
+                      <span class="text-muted float-right">
+                        <small class="text-muted">pre 30 minuta</small>
+                      </span>
+                      <strong class="text-success">Petar Petrović</strong>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet,
+                        <a href="#">#loremipsum</a>.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="media">
+                    <a href="#" class="float-left mr-4">
+                      <img src="img/randomperson2.jpg" alt="" class="rounded" />
+                    </a>
+                    <div class="media-body">
+                      <span class="text-muted float-right">
+                        <small class="text-muted">pre 19 dana</small>
+                      </span>
+                      <strong class="text-success">Marko Marković</strong>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Lorem ipsum dolor
+                        <a href="#">#ipsumdolor </a>adipiscing elit.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+                <hr />
+                <input
+                  type="name"
+                  class="form-control mb-2"
+                  placeholder="Vaše ime..."
+                  required
+                />
+                <input
+                  type="email"
+                  class="form-control mb-2"
+                  placeholder="Vaše E-mail adresa...(Neće biti prikazana)"
+                  required
+                />
+                <textarea
+                  class="form-control"
+                  placeholder="Napišite komentar..."
+                  rows="3"
+                  required
+                ></textarea>
+                <br />
+                <button type="button" class="btn btn-danger float-right">
+                  Postavite
+                </button>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Naš tim -->
+
+    <section id="nastim">
+      <div class="wrapper py-5">
+        <h4 class="text-center text-white display-4 mt-sm-5">
+          <span class="d-none d-md-inline">Mentalna aritmetika Suan pan | </span
+          >Naš tim
+        </h4>
+        <p class="text-white d-none d-sm-block text-center lead mb-5">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat,
+          ratione.
+        </p>
+        <div class="d-flex justify-content-between ntslider text-right my-5">
+          <div class="bg-white rounded my-sm-3 p-2 mx-3">
+            <img
+              class="img img-fluid w-100 rounded"
+              src="img/randomperson.jpg"
+              alt=""
+            />
+            <p class="font-weight-bold pt-4">Vladimir Jovanović</p>
+            <p class="text-danger">VASPITAČ</p>
+          </div>
+          <div class="bg-white rounded my-sm-3 p-2 mx-3">
+            <img
+              class="img img-fluid w-100 rounded"
+              src="img/randomperson.jpg"
+              alt=""
+            />
+            <p class="font-weight-bold pt-4">Vladimir Jovanović</p>
+            <p class="text-danger">VASPITAČ</p>
+          </div>
+          <div class="bg-white rounded my-sm-3 p-2 mx-3">
+            <img
+              class="img img-fluid w-100 rounded"
+              src="img/randomperson.jpg"
+              alt=""
+            />
+            <p class="font-weight-bold pt-4">Vladimir Jovanović</p>
+            <p class="text-danger">VASPITAČ</p>
+          </div>
+          <div class="bg-white rounded my-sm-3 p-2 mx-3">
+            <img
+              class="img img-fluid w-100 rounded"
+              src="img/randomperson.jpg"
+              alt=""
+            />
+            <p class="font-weight-bold pt-4">Vladimir Jovanović</p>
+            <p class="text-danger">VASPITAČ</p>
+          </div>
+          <div class="bg-white rounded my-sm-3 p-2 mx-3">
+            <img
+              class="img img-fluid w-100 rounded"
+              src="img/randomperson.jpg"
+              alt=""
+            />
+            <p class="font-weight-bold pt-4">Vladimir Jovanović</p>
+            <p class="text-danger">VASPITAČ</p>
+          </div>
+          <div class="bg-white rounded my-sm-3 p-2 mx-3">
+            <img
+              class="img img-fluid w-100 rounded"
+              src="img/randomperson.jpg"
+              alt=""
+            />
+            <p class="font-weight-bold pt-4">Vladimir Jovanović</p>
+            <p class="text-danger">VASPITAČ</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location Footer -->
+
+    <div id="redfooter" class="bg-danger py-5">
+      <div class="wrapper text-center">
+        <h2 class="text-white">
+          <span class="d-none d-lg-inline">Mentalna aritmetika Suan pan | </span
+          >Lokacija
+        </h2>
+        <p class="text-white">Cara Duašana 36</p>
+      </div>
+      <button
+        class="navbar-toggler py-2 px-0 mapfootbutton border-0 collapsed"
+        data-toggle="collapse"
+        data-target="#mapfoot"
+        aria-expanded="false"
+      >
+        <img src="img/location.svg" class="locico" alt="" />
+      </button>
+      <div id="mapfoot" class="w-100 my-0 collapse">
+        <div class="mapouter w-100">
+          <div class="gmap_canvas">
+            <iframe
+              id="gmap_canvas2"
+              src="https://maps.google.com/maps?q=cara%20du%C5%A1ana%2036&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Main Footer -->
+    <footer class="bg-dark">
+      <div class="wrapper">
+        <div class="row">
+          <div
+            class="col-12 col-lg-4 mt-3 my-md-3 text-center d-flex flex-wrap align-items-center"
+          >
+            <a
+              href="https://webdizajn-beograd.com/"
+              target="_blank"
+              class="w-100 d-block studio77link"
+            >
+              <img src="img/s77.svg" alt="" />
+              <p class="lead text-white w-100">
+                Design and SEO by Studio 77
+              </p>
+            </a>
+          </div>
+          <span class="d-sm-none bg-white w-100 disshr mx-5 mt-2"></span>
+          <div class="col-12 col-md-6 mt-3 col-lg-4">
+            <h5 class="text-white text-center mt-4">
+              Suan Pan Mentalna Aritmetika
+            </h5>
+            <ul class="list-unstyled p-3 m-0 text-center text-md-left">
+              <li class="footitem">
+                <a href="" class="text-white">
+                  <p>
+                    <i
+                      class="fas fa-map-marker-alt bg-secondary rounded-circle"
+                    ></i>
+                    Cara Dušana 36,
+                    <strong>Beograd</strong>
+                  </p>
+                </a>
+              </li>
+              <li class="footitem">
+                <a href="" class="text-white">
+                  <p>
+                    <i class="fas fa-phone bg-secondary rounded-circle"></i>
+                    064/987-654-321
+                  </p>
+                </a>
+              </li>
+              <li class="footitem">
+                <a href="" class="text-white">
+                  <p>
+                    <i class="fas fa-envelope bg-secondary rounded-circle"></i>
+                    suanpan@suan.pan
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <span class="d-sm-none bg-white w-100 disshr mx-5 mb-4"></span>
+          <div class="col-12 col-md-6 col-lg-4 socialnet my-md-3">
+            <div
+              class="copyright mt-md-4 text-center text-lg-right font-weight-light"
+            >
+              <p class="text-white">
+                Copyright © 2016 decjicentarsirijus.com
+              </p>
+              <p class="text-white">Sva prava zadržana</p>
+              <p class="text-white">Mentalna aritmetika</p>
+            </div>
+            <div class="row text-white text-center mb-3">
+              <div class="col-3 col-lg-6"></div>
+              <div class="col-2">
+                <a href="" class="text-white"
+                  ><i class="fcbk fab fa-facebook-f"></i
+                ></a>
+              </div>
+              <div class="col-2">
+                <a href="" class="text-white"
+                  ><i class="twtr fab fa-twitter"></i>
+                </a>
+              </div>
+              <div class="col-2">
+                <a href="" class="text-white"
+                  ><i class="ggpls fab fa-google-plus-g"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script>
+      //Slick
+      $(".ntslider").slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              dots: false,
+              infinite: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 340,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+
+      //Header Stick to the top
+      window.onscroll = function() {
+        myFunction();
+      };
+      var header = document.getElementById("mainnav");
+      var upperhead = document.getElementById("topnav");
+      var logo = document.getElementById("seclogo");
+      var sticky = header.offsetTop;
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+          upperhead.classList.add("stickystay");
+          logo.classList.remove("d-none");
+        } else {
+          header.classList.remove("sticky");
+          upperhead.classList.remove("stickystay");
+          logo.classList.add("d-none");
+        }
+      }
+
+      //Carousel speed
+      $(".carousel").carousel({
+        interval: 4000
+      });
+
+      //Plus to minus
+      $(".crdhdr").click(function() {
+        if (
+          $(this)
+            .find("i")
+            .hasClass("fa-plus")
+        ) {
+          $(this)
+            .find("i.plustomin")
+            .removeClass("fa-plus"),
+            $(this)
+              .find("i.plustomin")
+              .addClass("fa-minus");
+        } else if (
+          $(this)
+            .find("i")
+            .hasClass("fa-minus")
+        ) {
+          $(this)
+            .find("i.plustomin")
+            .removeClass("fa-minus"),
+            $(this)
+              .find("i.plustomin")
+              .addClass("fa-plus");
+        }
+      });
+    </script>
+  </body>
+</html>

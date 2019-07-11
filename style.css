@@ -1,0 +1,498 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+:hover {
+  transition: 0.3s all ease-in-out;
+}
+.mainlogo {
+  left: 0;
+  top: 0;
+  padding: 10px;
+  border-radius: 15px;
+}
+#seclogo {
+  left: 0;
+  top: 0;
+}
+#maincolbutt {
+  font-size: 1.7em;
+  height: 40px;
+}
+#seclogo img {
+  height: 80px;
+  filter: drop-shadow(5px 5px 5px #202020);
+  transition: 0.3s all ease-in-out;
+}
+#seclogo:hover img {
+  opacity: 0.8;
+}
+.mainlogo:hover {
+  opacity: 0.9;
+}
+header {
+  z-index: 10000;
+}
+.topnav {
+  height: 75px;
+  filter: drop-shadow(0 5px 5px rgb(24, 24, 24));
+  z-index: 10000;
+}
+#contactform {
+  padding: 120px 0;
+}
+.mnlink::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #f3f3f3;
+  transition: width 0.3s ease-in-out;
+  z-index: 100;
+}
+.mnlink:hover::after {
+  width: 100%;
+  transition: width 0.3s ease-in-out;
+}
+.appeardrop {
+  right: 0;
+  top: 0;
+  height: 40px;
+  width: 200px;
+  z-index: 10000000;
+}
+.mainnav {
+  height: 40px;
+  box-shadow: 0 5px 8px rgb(24, 24, 24);
+  z-index: 999;
+}
+.topnavtext {
+  line-height: 40px;
+}
+
+.textcubeslid {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 30px;
+}
+#mentar {
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 15vh), 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 15vh), 0% 100%);
+  padding: 50px 0 150px;
+  background: #fff;
+  border-bottom: 1px #525252 solid;
+}
+.hpmentcards {
+  padding-bottom: 80px;
+}
+.hpmentaritem img {
+  height: 220px;
+  margin: 40px 0;
+}
+.hpmentaritem {
+  width: 300px;
+  border-radius: 10px;
+  filter: drop-shadow(10px 15px 15px rgb(138, 138, 138));
+}
+.hpmi1 {
+  background: linear-gradient(white, #de7d99);
+}
+.hpmi2 {
+  background: linear-gradient(white, #a0ebff);
+}
+.hpmi3 {
+  background: linear-gradient(white, #0095ff);
+}
+
+#whyus {
+  margin-top: -15vh;
+  background: linear-gradient(to bottom left, #ff8054, #ff54aa);
+}
+#whyus h2 {
+  width: 100%;
+  margin: 25vh 0 10vh;
+}
+.whyusitem {
+  width: 350px;
+  border-radius: 10px;
+  background: rgb(233, 233, 233);
+  margin-bottom: 100px;
+  transition: 0.3s all ease-in-out;
+}
+.whyusitem:hover {
+  background: #fff;
+  box-shadow: 5px 10px 15px rgb(46, 46, 46);
+}
+.whyusitem img {
+  width: 150px;
+  margin-bottom: 30px;
+}
+
+.jumbotron {
+  background: none !important;
+}
+.jmb1 {
+  background-image: url(img/decji-centar-sirijus-suan-pan-01.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+}
+.jmb2 {
+  background-image: url(img/decji-centar-sirijus-suan-pan-05.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.dotoverlay {
+  width: 100%;
+  height: 100%;
+  background-image: url(img/blackdot.svg) !important;
+  background-size: 1px !important;
+}
+.novhead {
+  margin: 50px 0;
+}
+.inmainnav {
+  z-index: 10000;
+}
+#comments .card-body .media a img {
+  width: 100px;
+}
+#nastim {
+  background: linear-gradient(to bottom left, #ff8054, #ff54aa);
+}
+#redfooter {
+  position: relative;
+}
+#redfooter .mapfootbutton {
+  position: absolute;
+  right: 50px;
+  top: 30px;
+  height: 92px;
+  width: 150px;
+  text-align: center;
+}
+#redfooter .mapfootbutton .locico {
+  width: 80px;
+  transition: 0.3s all ease-in-out;
+}
+#redfooter .mapfootbutton:hover > .locico {
+  filter: drop-shadow(5px 5px 5px #101010);
+  opacity: 0.9;
+}
+#gmap_canvas2 {
+  width: 100% !important;
+  height: 60vh !important;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 100%;
+  width: 100%;
+}
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 100%;
+  width: 100%;
+}
+.footitem i.fas,
+.socialnet i {
+  font-size: 1.4em;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.footitem a p {
+  line-height: 40px;
+}
+textarea {
+  resize: none;
+}
+.socialnet .fab {
+  background-size: 200px 40px;
+  background-position-x: 0;
+  transition: 0.3s all ease-in-out;
+}
+.fcbk {
+  background: linear-gradient(to right, gray, gray, rgb(34, 66, 161));
+}
+.twtr {
+  background: linear-gradient(to right, gray, white);
+}
+.ggpls {
+  background: linear-gradient(to right, gray, gray, red);
+}
+.socialnet .fab:hover {
+  background-position-x: -160px;
+}
+.twtr:hover {
+  color: royalblue;
+}
+.footitem a {
+  text-decoration: none;
+}
+.footitem i {
+  transition: 0.3s all ease-in-out;
+}
+.footitem a:hover {
+  color: lightgray !important;
+}
+.footitem a:hover > p > i {
+  background: #fff !important;
+  color: #dc3545 !important;
+  transition: 0.3s all ease-in-out;
+}
+.studio77link {
+  text-decoration: none;
+  transition: 0.3s all ease-in-out;
+}
+.studio77link:hover {
+  filter: drop-shadow(5px 5px 5px #000);
+  text-decoration: none;
+}
+.studio77link:hover > p {
+  color: #96d1cd !important;
+}
+.sticky {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 100000;
+}
+.stickystay {
+  margin-bottom: 40px;
+}
+.sticky + .content {
+  padding-top: 45px;
+}
+.showminus:before {
+  content: "-";
+}
+.showplus:before {
+  content: "+";
+}
+.slick-prev,
+.slick-next {
+  width: 40px !important;
+  height: 40px !important;
+}
+.slick-prev::before,
+.slick-next::before {
+  font-size: 40px !important;
+}
+.disshr {
+  height: 1px;
+}
+/* Abakus I Matematika */
+#abamat,
+#progarm {
+  background: url(img/slider2.jpg);
+  background-size: 100% 140%;
+}
+/* Cenovnik */
+#cenovnik {
+  background: url(img/ben-white-197668-unsplash.jpg);
+  background-size: 100% 100%;
+}
+/* Cilj Mentalne Aritmetike */
+#ciljment {
+  background: url(img/slider2.jpg);
+  background-size: 100% 100%;
+}
+/* Kurs Ment Aritm */
+.ktritem img {
+  height: 130px;
+}
+#kursmenta {
+  background: radial-gradient(white, lightgray);
+}
+
+/* Najčešća pitanja */
+#najcpit {
+  background: url(img/teaching.jpg);
+  background-size: 100% 180%;
+  background-position-y: -100px;
+}
+/* O nama */
+#onama {
+  background: url(img/teaching.jpg);
+  background-size: 100% 200%;
+  background-position-y: -100px;
+}
+/* Kontakt */
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 100%;
+  width: 100%;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 100%;
+  width: 100%;
+}
+.kontinfo {
+  border-color: #ced4da !important;
+}
+#gmap_canvas {
+  width: 100% !important;
+  height: 60vh !important;
+}
+#whyus2 {
+  margin-top: 0;
+  background: linear-gradient(to bottom left, #ff8054, #ff54aa);
+}
+#whyus2 h2 {
+  width: 100%;
+  margin: 25vh 0 10vh;
+}
+/* Video */
+#videoembed {
+  width: 100%;
+  height: 40vw;
+}
+/* RESPONISVE */
+
+@media (min-width: 992px) {
+  .droppar:hover > #secmenu {
+    display: block;
+  }
+  #secmenu {
+    display: none;
+    top: 40px;
+    left: 0;
+    width: 350px;
+    z-index: 100000000000;
+    position: absolute;
+    z-index: 10000;
+  }
+  #secmenu li {
+    border-bottom: 1px #fff solid;
+  }
+}
+@media (max-width: 1199px) {
+  .wrapper {
+    width: 90%;
+  }
+  #abamat,
+  #progarm {
+    background-size: 100% 120%;
+  }
+}
+@media (max-width: 991px) {
+  h2 {
+    font-size: 3rem !important;
+  }
+  #navbarNav {
+    background: #dc3545;
+  }
+  #secmenu {
+    width: 100%;
+    border-bottom: 1px #fff solid;
+  }
+  .jmb1,
+  .jmb2 {
+    background-size: 1300px 100%;
+    background-position-x: -350px;
+  }
+  #abamat,
+  #progarm {
+    background-size: 100% 100%;
+  }
+  #ciljment {
+    background-size: 180% 100%;
+    background-position-x: -400px;
+  }
+  #onama {
+    background-size: 100% 150%;
+  }
+}
+@media (max-width: 767px) {
+  h2 {
+    font-size: 2rem !important;
+  }
+  #redfooter .mapfootbutton {
+    right: 10px;
+  }
+  #abamat,
+  #cenovnik,
+  #progarm {
+    background-size: 1300px 100%;
+    background-position-x: -400px;
+  }
+  #ciljment {
+    background-size: 300% 100%;
+    background-position-x: -600px;
+  }
+  #najcpit {
+    background: url(img/teaching.jpg);
+    background-size: 120% 100%;
+    background-position-y: 0;
+  }
+  #onama {
+    background-size: 100% 120%;
+  }
+}
+@media (max-width: 575px) {
+  h1 {
+    margin-top: 16px !important;
+  }
+  .jumbotron h3,
+  .jumbotron h4 {
+    font-size: 150% !important;
+    font-weight: initial !important;
+  }
+  #najcpit {
+    background: url(img/teaching.jpg);
+    background-size: 1400px 100%;
+    background-position-y: 0;
+    background-position-x: -600px;
+  }
+}
+@media (max-width: 479px) {
+  h1 {
+    margin-top: 16px !important;
+  }
+  #redfooter .mapfootbutton {
+    right: 0;
+    width: 100px;
+  }
+  #seclogo img {
+    height: 40px;
+  }
+  .appeardrop {
+    width: 80px;
+  }
+  .slick-prev {
+    left: -18px !important;
+    z-index: 1000;
+  }
+  .slick-next {
+    right: -18px !important;
+  }
+  .whyusitem {
+    margin-bottom: 10px;
+  }
+  #ciljment {
+    background-size: 700% 100%;
+    background-position-x: -800px;
+  }
+  #onama {
+    background-size: 1300px 100%;
+    background-position-x: -800px;
+  }
+}
+@media (max-width: 392px) {
+  h1 {
+    text-align: right;
+    line-height: 37px !important;
+    margin: 0 !important;
+  }
+}
